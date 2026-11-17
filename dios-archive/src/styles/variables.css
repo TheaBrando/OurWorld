@@ -1,0 +1,20 @@
+:root {
+  --color-bg: #171416;
+  --color-surface: #242023;
+  --color-surface-2: #30292d;
+  --color-text: #eee4df;
+  --color-muted: #b4a4a0;
+  --color-accent: #a52c39;
+  --color-accent-light: #d45b69;
+  --color-blue: #b9e4fa;
+  --font-main: "Noto Serif SC", serif;
+  --font-display: "Cinzel", Georgia, serif;
+  --font-mono: "Courier New", monospace;
+  --page-width: 1120px;
+  --page-padding: 22px;
+  --radius-sm: 7px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --shadow: 0 12px 38px rgba(0,0,0,.32);
+  --line: rgba(226, 195, 185, .19);
+}

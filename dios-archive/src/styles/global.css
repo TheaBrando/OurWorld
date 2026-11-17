@@ -1,0 +1,15 @@
+body {
+  background:
+    radial-gradient(ellipse at 15% 0%, rgba(108,45,57,.16), transparent 42%),
+    var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  line-height: 1.7;
+}
+button, input, textarea { color: inherit; }
+button:focus-visible, input:focus-visible, textarea:focus-visible, a:focus-visible {
+  outline: 2px solid var(--color-accent-light);
+  outline-offset: 3px;
+}
+a { color: #e7a5ac; }
+::selection { background: #8f3444; color: white; }

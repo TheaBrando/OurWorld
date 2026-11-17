@@ -1,0 +1,8 @@
+.san-widget { position:fixed; top:18px; right:20px; z-index:9000; width:136px; padding:12px; color:var(--color-text); background:var(--color-surface); border:1px solid var(--color-accent); border-radius:var(--radius-md); box-shadow:var(--shadow); text-align:left; }
+.san-widget strong { display:block; margin-top:4px; font:1.2rem var(--font-mono); }
+.san-bar { height:4px; margin-top:9px; background:#514449; border-radius:10px; overflow:hidden; }
+.san-bar-fill { height:100%; background:var(--color-accent-light); transition:width .5s ease; }
+.san-critical .san-bar-fill { background:#d20e2a; }
+.san-dialog { position:fixed; top:100px; right:20px; z-index:9001; width:min(280px,calc(100vw - 40px)); padding:20px; background:var(--color-surface); border:1px solid var(--color-accent); border-radius:var(--radius-md); box-shadow:var(--shadow); }
+.san-dialog p { color:var(--color-accent-light); font-family:var(--font-mono); }
+.toast-message { position:fixed; left:50%; bottom:32px; transform:translateX(-50%); z-index:11000; padding:13px 22px; background:#302329; border:1px solid var(--color-accent-light); border-radius:12px; box-shadow:var(--shadow); text-align:center; max-width:calc(100vw - 30px); }

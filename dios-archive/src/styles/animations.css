@@ -1,0 +1,24 @@
+.quiz-corruption { animation:quiz-flicker .12s infinite, quiz-shake .17s infinite; }
+@keyframes quiz-flicker { 50% { filter:brightness(1.9) contrast(1.5); } }
+@keyframes quiz-shake {
+  0%,100% { transform:translate(0,0) rotate(0); }
+  25% { transform:translate(-7px,3px) rotate(-1deg); }
+  50% { transform:translate(7px,-4px) rotate(1deg); }
+  75% { transform:translate(-4px,-3px) rotate(-1deg); }
+}
+.quiz-collapse { animation:collapse .8s forwards; }
+@keyframes collapse { 50% { transform:scale(1.08) rotate(4deg); } 100% { opacity:0; transform:scale(.02) rotate(30deg); } }
+.san-critical { animation:heartbeat .9s infinite; }
+@keyframes heartbeat { 15% { transform:scale(1.035); } 30% { transform:scale(1); } 45% { transform:scale(1.02); } }
+.awakened { color:var(--color-blue)!important; text-shadow:0 0 8px rgba(124,201,255,.4); }
+.awakened:before { content:""; position:fixed; inset:0; background:rgba(75,145,210,.22); pointer-events:none; z-index:8998; animation:blue-in .4s; }
+@keyframes blue-in { from {opacity:0} to {opacity:1} }
+.awareness-overlay { position:fixed; inset:0; z-index:10001; display:grid; place-content:center; text-align:center; pointer-events:none; opacity:0; visibility:hidden; }
+.awakened .awareness-overlay { visibility:visible; animation:awareness-message 2.6s forwards; }
+.awareness-overlay h2 { color:#c8edff; font:clamp(2rem,6vw,4rem) var(--font-display); }
+.awareness-overlay p { color:rgba(220,240,255,.6); }
+@keyframes awareness-message { 0%,100% {opacity:0} 15%,78% {opacity:1} }
+.screen-glitch { animation:screen-glitch .12s steps(2) 5; }
+@keyframes screen-glitch { 25% {transform:translateX(-5px);filter:hue-rotate(90deg)} 50% {transform:translateX(5px);filter:invert(.3)} 75% {transform:translateX(-3px);filter:contrast(2)} }
+@keyframes note-arrive { from {opacity:0;transform:translateY(20px) rotate(-4deg)} to {opacity:1;transform:translateY(0) rotate(1deg)} }
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; } }

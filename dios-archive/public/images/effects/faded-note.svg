@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="420" viewBox="0 0 700 420">
+<defs><filter id="rough"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values=".5 0 0 0 .3 .5 0 0 0 .25 .5 0 0 0 .15 0 0 0 .15 0"/></filter></defs>
+<path d="M40 30 L655 18 L670 385 L28 398 Z" fill="#c9b98f" stroke="#827454" stroke-width="7"/>
+<path d="M40 30 L655 18 L670 385 L28 398 Z" filter="url(#rough)" opacity=".22"/>
+<g fill="#4a3029" font-family="serif" text-anchor="middle" transform="rotate(-3 350 210)">
+<text x="350" y="175" font-size="42">正在开发中</text><text x="350" y="245" font-size="36">敬请期待</text><text x="350" y="310" font-size="18">— ARCHIVE ERROR —</text>
+</g></svg>
